@@ -46,8 +46,10 @@ def callback():
 def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage('その通りなのだぁ!!'))
-        TextSendMessage( text='僕も'+event.message.text +'だと思うのだぁ!!')
+        (
+            TextSendMessage('その通りなのだぁ!!')),
+            TextSendMessage( text='僕も'+event.message.text +'だと思うのだぁ!!')
+        ))
 
 #スタンプが来たとき
 @handler.add(MessageEvent, message=StickerMessage)
@@ -58,7 +60,7 @@ def handle_sticker(event):
             StickerSendMessage(
                 package_id='1',
                 sticker_id='3'
-            ),
+            )
         ))
         #スタンプにはpackage_idとsticker_idが存在する
         #package_idは、スタンプの購入単位で振られている　「熱盛スタンプ」には○番、「しゃべる！Seyana!アカネチャン」には△番というように振られている
