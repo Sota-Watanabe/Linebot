@@ -57,7 +57,7 @@ def handle_sticker(event):
         (
             StickerSendMessage(
                 package_id='1',
-                sticker_id='6'
+                sticker_id='3'
             ),
         ))
         #スタンプにはpackage_idとsticker_idが存在する
