@@ -48,7 +48,8 @@ def handle_message(event):
         event.reply_token,
         (
             TextSendMessage('その通りなのだぁ!!'),
-            TextSendMessage( text='僕も'+event.message.text +'と思うのだぁ!!')
+            TextSendMessage( text='僕も'+event.message.text +'と思うのだぁ!!'),
+            TextSendMessage('へけぇ!!')
         ))
 
 #スタンプが来たとき
