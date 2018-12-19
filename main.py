@@ -50,13 +50,14 @@ def handle_message(event):
             TextSendMessage('その通りなのだぁ!!'),
             TextSendMessage( text='僕も'+event.message.text +'と思うのだぁ!!')
         ))
-#
+
 #スタンプが来たと
 @handler.add(MessageEvent, message=StickerMessage)
 def handle_sticker(event):
     line_bot_api.reply_message(
         event.reply_token,
         (
+            TextSendMessage('えええ!!'),
             StickerSendMessage(
                 package_id='1',
                 sticker_id='3'
