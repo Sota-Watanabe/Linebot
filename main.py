@@ -48,9 +48,9 @@ def handle_message(event):
         event.reply_token,
         (
             TextSendMessage('その通りなのだぁ!!'),
-            TextSendMessage( 'だと思うのだぁ!!')
+            TextSendMessage( text='僕も'+event.message.text +'だと思うのだぁ!!')
         ))
-#text='僕も'+event.message.text +
+#
 #スタンプが来たと
 @handler.add(MessageEvent, message=StickerMessage)
 def handle_sticker(event):
