@@ -57,7 +57,7 @@ def handle_sticker(event):
         (
             StickerSendMessage(
                 package_id='1',
-                sticker_id='1'
+                sticker_id='2'
             ),
             StickerSendMessage(
                 package_id='1',
