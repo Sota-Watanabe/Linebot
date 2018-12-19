@@ -57,12 +57,8 @@ def handle_sticker(event):
         (
             StickerSendMessage(
                 package_id='1',
-                sticker_id='2'
+                sticker_id='5'
             ),
-            StickerSendMessage(
-                package_id='1',
-                sticker_id='2'
-            )
         ))
         #スタンプにはpackage_idとsticker_idが存在する
         #package_idは、スタンプの購入単位で振られている　「熱盛スタンプ」には○番、「しゃべる！Seyana!アカネチャン」には△番というように振られている
