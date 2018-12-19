@@ -49,7 +49,7 @@ def handle_message(event):
         (
             TextSendMessage('その通りなのだぁ!!')),
             TextSendMessage( 'だと思うのだぁ!!')
-        ))
+        )
 #text='僕も'+event.message.text +
 #スタンプが来たと
 @handler.add(MessageEvent, message=StickerMessage)
