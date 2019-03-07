@@ -47,6 +47,7 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         (
+            # 全行程ハム太郎の作成
             TextSendMessage('その通りなのだぁ!!'),
             TextSendMessage( text='僕も'+event.message.text +'と思うのだぁ!!'),
             TextSendMessage('へけぇ!!')
